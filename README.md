@@ -11,4 +11,5 @@
    5 git init
 
    To Run Project
+
    6 py .\manage.py runserver
