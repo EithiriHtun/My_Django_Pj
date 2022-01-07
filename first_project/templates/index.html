@@ -1,11 +1,14 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Template Testing</title>
+    <link rel="stylesheet" href="{% static "/css/styles.css" %}">
   </head>
   <body>
    <h1>Hello!.Testing for template!.</h1>
    {{ insert_me }}
+   <img src="{% static "images/BTS.jpg" %}" alt="Oh!,My BIAS!">
   </body>
 </html>
