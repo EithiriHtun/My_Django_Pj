@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from first_app.models import Topic,Webpage,AccessRecord
 # Create your views here.
 
 # def index(request):
 #     return HttpResponse("Hello World!.And Testing git!")
 
 def index(request):
-    my_page = {'insert_me' : "Hello!. Testing by viwe for template!"}
-    return render(request,"index.html",context=my_page)
+    webpages_list = AccessRecord.objects.order_by('date')
+    date_dict = {'access_records':webpages_list}
+    return render(request,"first_app/index.html",context=date_dict)
+
+    # my_page = {'insert_me' : "Hello!. Testing by viwe for template!"}
+    # return render(request,"index.html",context=my_page)
