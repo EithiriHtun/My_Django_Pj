@@ -28,3 +28,7 @@ def form_name_view(request):
 		  print("Text"+form.cleaned_data['text'])
 
 	return render(request,'first_app/form.html',{'form':form})
+
+
+def other(request):
+	return render(request,"index.html")
