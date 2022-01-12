@@ -1,15 +1,50 @@
 # My_Django_Pj
-  To Run Project
-   1 cd C:\Users\FAMILY\Test_Django_Repo\
+  To Setup Project
+  
+   # cd C:\Users\FAMILY\Test_Django_Repo\
    
-   2 django-admin startproject ProTwo
+   # django-admin startproject ProTwo
    
-   3 cd .\ProTwo\
+   # cd .\ProTwo\
    
-   4 py .\manage.py startapp AppTwo
+   # py .\manage.py startapp AppTwo
    
-   5 git init
+   # git init
 
    To Run Project
 
-   6 py .\manage.py runserver
+  # py .\manage.py runserver
+
+#Model and DB 
+
+   # cd .\first_project\
+
+   # py .\manage.py makemigrations AppTwo
+   
+   # py .\manage.py migrate 
+   
+   # py .\manage.py shell (to test db Ok not Not) 
+   
+   # py .\manage.py createsuperuser
+      -> Enter username and password 
+   
+Faker Test
+
+   # pip install Faker
+   
+   # cd .\first_project\
+   
+   # py populate_fake_app.py
+   
+To Run Pj
+
+   # py .\manage.py runserver
+   
+Tool Bar Setup
+
+  # pip install django-debug-toolbar
+   
+   
+   
+   
+   
