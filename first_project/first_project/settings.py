@@ -94,7 +94,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.Argon2PasswordHAsher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
     'django.contrib.auth.hashers.BCryptPasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
@@ -142,7 +142,7 @@ STATICFILES_DIRS = [
 
 #MEDIA_DIR
 MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 
 
 INTERNAL_IPS = ['127.0.0.1']
