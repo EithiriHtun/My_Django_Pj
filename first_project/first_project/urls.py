@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from first_app import views
 from django.urls import include
+from first_project import settings
 
 urlpatterns = [
     path('',views.index,name='index'),
@@ -24,3 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('form_page/',views.form_name_view,name='form'),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+      path('__debug__/',include(debug_toolbar.urls))
+    ] + urlpatterns
